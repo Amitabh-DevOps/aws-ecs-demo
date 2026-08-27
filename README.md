@@ -60,8 +60,8 @@ aws --version
 
 ```bash
 # Clone repository
-git clone <YOUR_GITHUB_REPO_URL>
-cd aws-ecr-ecs
+git clone https://github.com/Amitabh-DevOps/aws-ecs-demo
+cd aws-ecs-demo
 
 # Build local Docker image
 docker build -t ecs-demo-app .
@@ -69,8 +69,8 @@ docker build -t ecs-demo-app .
 # Run container locally to verify
 docker run -d -p 3000:3000 --name demo-app ecs-demo-app
 
-# Verify container response
-curl http://localhost:3000
+# Verify container response (Open inbound rule from EC2 Security Group to Custom TCP - Port 3000)
+curl http://<EC2_PUBLIC_IP>:3000
 ```
 
 ---
