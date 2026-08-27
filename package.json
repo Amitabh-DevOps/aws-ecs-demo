@@ -1,0 +1,13 @@
+{
+  "name": "aws-ecr-ecs-demo",
+  "version": "1.0.0",
+  "description": "Beginner demo application for AWS ECR & ECS Fargate video tutorial",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
